@@ -1,0 +1,46 @@
+body {
+  margin-top: $header-height;
+}
+
+.header {
+  background: #fff;
+  color: #262626;
+  height: $header-height;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+.navi {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: inline-block;
+
+  li {
+    display: inline-block;
+    vertical-align: top;
+    a {
+      color: #464646;
+      display: block;
+      line-height: $header-height;
+      text-decoration: none;
+      padding: 0 24px;
+      font-size: 18px;
+      height: $header-height;
+
+      &.active {
+        border-bottom: 3px solid #e24429;
+      }
+
+      &:hover,
+      &.active {
+        color: #262626;
+        background: #fafafa;
+      }
+    }
+  }
+}
+

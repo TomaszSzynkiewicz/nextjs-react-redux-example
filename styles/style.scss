@@ -1,0 +1,83 @@
+@import '_reset';
+@import '_variables';
+@import '_mixins';
+@import '_helpers';
+@import '_forms';
+@import '_header';
+
+@media only screen {
+  html {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  body {
+    background: #f1f1f1;
+    color: #464646;
+    overflow-y: scroll;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3 { font-weight: 400; }
+
+  a {
+    @include animate();
+    color: #e24429;
+    text-decoration: none;
+
+    &:hover {
+      color: #464646;
+    }
+  }
+
+  .page-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 12px 0;
+  }
+
+  .box {
+    padding: 48px;
+    background: #fff;
+  }
+
+  .tiny-form-wrap {
+    width: 320px;
+    margin: 48px auto;
+  }
+
+  .tiny-form {
+    padding: 24px;
+    background: #f5f5f5;
+    position: relative;
+
+    .loader {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  .tiny-form-logo {
+    padding: 36px 0;
+    font-size: 0;
+    text-align: center;
+  }
+
+  .tiny-form-header {
+    background: #fff;
+    color: #464646;
+    text-align: center;
+    padding: 18px 0;
+  }
+
+  .tiny-form-footer {
+    padding: 12px 0 0;
+    text-align: center;
+    font-size: .9em;
+  }
+}
