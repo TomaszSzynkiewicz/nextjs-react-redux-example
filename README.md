@@ -8,3 +8,9 @@ Run:
 ```
 npm run dev
 ```
+
+Accepted credentials:
+```
+test@test.pl
+Password1
+```
